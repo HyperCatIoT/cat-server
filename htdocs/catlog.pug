@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Search Catalog
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+  body
+    .container
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/cat') Hyper/Cat Server
+          #navbar.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='index.html') Home
+              li
+                a(href='search.html') Search Catalog
+              li
+                a(href='getstarted.html') README
+          // /.nav-collapse
+
+      .jumbotron
+        h3 Search Results:
+        - var text = JSON.stringify(results,null,2,100).replace(/\n/g, '<br>')
+          p(style = 'white-space: pre-wrap; font-family: monospace') !{text}
+
+
+
+

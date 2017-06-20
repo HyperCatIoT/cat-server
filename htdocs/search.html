@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Catalog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/hypercat">Hyper/Cat Server</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="search.html">Search Catalog</a></li>
+                        <li><a href="getstarted.html">README</a></li>
+                        <li><a href="/cat">RAW-DATA</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div style="width: 50%" >
+            <form action="/cat" method="get" class="form-signin">
+                <h2 class="form-signin-heading">Catalog Search Parameters:</h2>
+                <label for="href" class="sr-only">href</label>
+                <input type="text" name="href" id="href" class="form-control" placeholder="href" autofocus>
+                <label for="rel" class="sr-only">rel</label>
+                <input type="text" name="rel" id="rel" class="form-control" placeholder="rel">
+                <label for="val" class="sr-only">val</label>
+                <input type="text" name="val" id="val" class="form-control" placeholder="val"><br>
+                <button class="btn btn-lg btn-primary pull-right"  type="submit">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"> </span>
+                    Search Now
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -6,7 +6,7 @@ A simple dynamic catalogue server implementing:
  * A single catalogue at /cat
  * Read/insert/modify of items
  * Basic Auth for authentication (required for write operations)
- * Search of catalogue (urn:X-tsbiot:search:simple)
+ * Search of catalogue (urn:X-rbccps:search:simple)
 
 The server is built for simplicity, not performance.
 See htdocs/index.html for more information.
